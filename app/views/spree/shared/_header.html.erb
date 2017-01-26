@@ -1,0 +1,35 @@
+<% if spree_current_user %>
+  <div id="spree-header">
+    <header id="header" data-hook>
+      <div class="container">
+        <div class="row">
+          <figure id="logo" class="col-md-4 col-sm-3" data-hook>
+            <%= logo %>
+          </figure>
+          <%= render partial: 'spree/shared/nav_bar' %>
+        </div>
+        <div id="link-to-cart" data-hook">
+          <noscript>
+            <%= link_to Spree.t(:cart), '/cart' %>
+          </noscript>
+          &nbsp;
+        </div>
+        <script>Spree.fetch_cart()</script>
+      </div>
+    </header>
+  </div>
+<% else %>
+  <div id="spree-header">
+    <header id="header" data-hook>
+      <div class="container">
+        <div class="row">
+          <figure id="logo" class="col-md-4 col-sm-3" data-hook>
+            <%= logo %>
+          </figure>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+    </div>
+  </div>
+<% end %>

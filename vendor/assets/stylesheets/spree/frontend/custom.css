@@ -1,5 +1,8 @@
-
-
 #spree-header #logo img {
 	margin-top: 10px;
+}
+
+a.cart-info {
+	color: white;
+	float: right;
 }
