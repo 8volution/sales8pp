@@ -6,3 +6,7 @@ a.cart-info {
 	color: white;
 	float: right;
 }
+
+div.col-md-6.form-inline.pull-right{
+	display: none;
+}
