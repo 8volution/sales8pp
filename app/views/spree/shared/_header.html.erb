@@ -8,7 +8,13 @@
           </figure>
           <%= render partial: 'spree/shared/nav_bar' %>
         </div>
-        <div id="link-to-cart" data-hook">
+        <div class="col-md-6 col-xs-6" id="admin-link">
+        <% if current_spree_user.admin? %>
+            <%= link_to "Go to admin panel", '/admin' %>
+            <% end %>
+        </div>    
+        <div id="link-to-cart" data-hook" class="col-md-6 col-xs-6">
+
           <noscript>
             <%= link_to Spree.t(:cart), '/cart' %>
           </noscript>
