@@ -1,3 +1,5 @@
+config.assets.initialize_on_precompile = false
+
 require_relative 'boot'
 
 require 'rails/all'
@@ -5,7 +7,6 @@ require 'rails/all'
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
-config.assets.initialize_on_precompile = false
 
 module Sales8pp
   class Application < Rails::Application
