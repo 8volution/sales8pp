@@ -10,3 +10,7 @@ a.cart-info {
 div.col-md-6.form-inline.pull-right{
 	display: none;
 }
+
+div#admin-link a {
+	color: white;
+}
